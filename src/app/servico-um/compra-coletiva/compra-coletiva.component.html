@@ -1,0 +1,90 @@
+<div class="solucoes-pagina" id="compraColetiva">
+    <div class="container">
+        <div class="row titulo">
+            <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                <h2>Compre o XLOTO gestão com 10 <br> amigos e ganhe um descontão !!!</h2>
+                <img src="/assets/img/grupo-pessoas.png" alt="" srcset="">
+            </div>
+
+            <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                <h1>Sistema de Gestão para Casa Lotérica</h1>
+                <h3>Promoção especial</h3>
+                <p>Promoção de aniversário de 5 anos da XLOTO, onde você terá desconto de 45% na aquisição do XLOTO
+                    Player e 30% de desconto no sistema de gestão para sua lotérica</p>
+
+                <div class="box-add">
+                    <div class="box-increment">
+                        <div class="controls">
+                            <img src="/assets/img/button-decrement.svg" alt="" (click)="decrement()">
+                            <p>{{ indexArray + 1 }} <span>terminais</span></p>
+                            <img src="/assets/img/button-increment.svg" alt="" (click)="increment()">
+                        </div>
+
+                        <div class="info-promocao">
+                            <h3>Valor Promocional</h3>
+                            <p>{{ terminalEscolhido.precoPromocao }}</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tabela-promocao">
+                    <p>Valor fora da promoção {{ terminalEscolhido.preco }}</p>
+                    <p>Promoção válida até <span>15/01/21</span></p>
+                </div>
+
+                <a (click)="comprar()">
+                    <button>Comprar</button>
+                </a>
+
+                <div class="box-pocentagem" *ngIf="compradores">
+                    <h4><span>{{ compradores.length }}</span> pessoas já compraram! 🔥
+                    </h4>
+                    <div class="item">
+                        <div class="percent">
+                            <div class="percent-value" [style.width]="getPercent()"></div>
+                        </div>
+
+                        <!-- <a (click)="openModalCompradores()"> 
+                            <img src="/assets/img/preview-orange.svg" alt="" srcset=""> VEJA QUEM JÁ COMPROU </a> -->
+                    </div>
+                </div>
+
+                <h3 class="promocao-relampago">Promoção relâmpago por tempo limitado. Os 3 primeiro que comprarem
+                    ganharão um bônus extra. Encerra em 31/10/2021.</h3>
+
+                <!-- <div class="count">
+                    <lib-angular-countdown-dateTime [endDateBind]="endTime" [dayText]="'DIAS'" [hourText]="'HORAS'"
+                        [minutesText]="'MINUTOS'" [secondsText]="'SEGUNDOS'"> </lib-angular-countdown-dateTime>
+                </div> -->
+
+                <div class="shared">
+                    <p>Compartilhe com seus amigos! Limite máximo de 10 lotéricos. </p>
+                    <ul>
+                        <li>
+                            <a href="https://api.whatsapp.com/send?text=https://xloto.com.br/gestao"
+                                data-action="share/whatsapp/share" target="_blank">
+                                <img src="/assets/img/whats.svg" alt="">
+                            </a>
+                        </li>
+                        <li>
+                            <a (click)="fb($event)">
+                                <img src="/assets/img/facebook.svg" alt="" srcset="">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://t.me/share/url?url=https://xloto.com.br/gestao&amp;text=https://xloto.com.br/gestao"
+                                target="_blank">
+                                <img src="/assets/img/telegram.svg" alt="" srcset="">
+                            </a>
+                        </li>
+                        <li>
+                            <a [cdkCopyToClipboard]="instagramValue" (click)="copyInstagram()">
+                                <img src="/assets/img/instagram.svg" alt="" srcset="">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

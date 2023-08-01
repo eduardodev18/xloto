@@ -1,0 +1,173 @@
+<div class="container-fluid">
+
+  <div class="row">
+    <h2>Dados da Chamada - HEADER</h2>
+  </div>
+
+  <div class="row">
+    <div class="col-md-12 col-lg-12">
+      <mat-form-field class="example-full-width" appearance="outline">
+        <mat-label>Título da Chamada</mat-label>
+        <input
+          #inputTituloChamada
+          type="text"
+          matInput
+          placeholder="EX: Titulo da Promoção"
+        />
+      </mat-form-field>
+
+      <mat-form-field class="example-full-width" appearance="outline">
+        <mat-label>Descrição Promoção</mat-label>
+        <input
+          type="text"
+          matInput
+          placeholder="EX: Descrição da Promoção"
+          #inputDescricaoChamada
+        />
+      </mat-form-field>
+
+      <mat-form-field class="example-full-width" appearance="outline">
+        <mat-label>Id do Vídeo</mat-label>
+        <input
+          type="text"
+          matInput
+          placeholder="EX: Descrição da Promoção"
+          #inputIdVideo
+        />
+      </mat-form-field>
+
+      <button
+        mat-raised-button
+        color="primary"
+        (click)="
+          enviarChamada(
+            inputTituloChamada.value,
+            inputDescricaoChamada.value,
+            inputIdVideo.value
+          )
+        "
+      >
+        Enviar
+      </button>
+    </div>
+  </div>
+
+
+  <br><br>
+
+  <div class="row">
+    <h2>Alterar dados da promoção - PROMOÇÃO CRONOMETRO</h2>
+  </div>
+
+  <div class="row">
+    <div class="col-md-12 col-lg-12">
+      <mat-form-field class="example-full-width" appearance="outline">
+        <mat-label>Título da Promoção</mat-label>
+        <input
+          #inputPromocao
+          type="text"
+          matInput
+          placeholder="EX: Titulo da Promoção"
+          #inputLoterica
+        />
+      </mat-form-field>
+
+      <mat-form-field class="example-full-width" appearance="outline">
+        <mat-label>Descrição Promoção</mat-label>
+        <input
+          type="text"
+          matInput
+          placeholder="EX: Descrição da Promoção"
+          #inputDescricao
+        />
+      </mat-form-field>
+
+      <mat-form-field class="example-full-width" appearance="outline">
+        <mat-label>Data</mat-label>
+        <input
+          type="text"
+          matInput
+          placeholder="EX: Data"
+          mask="00/00/0000"
+          #inputData
+        />
+      </mat-form-field>
+
+      <button
+        mat-raised-button
+        color="primary"
+        (click)="
+          enviarPromocao(
+            inputPromocao.value,
+            inputDescricao.value,
+            inputData.value
+          )
+        "
+      >
+        Enviar
+      </button>
+    </div>
+  </div>
+
+  <br><br>
+
+  <div class="row">
+    <h2>Bônus</h2>
+  </div>
+
+  <div class="row">
+    <div [formGroup]="BonusForm" class="col-md-12 col-lg-12">
+      <div
+        formArrayName="items"
+        *ngFor="let item of BonusForm.get('items')?.controls; let i = index"
+      >
+        <div [formGroupName]="i">
+          <mat-form-field class="example-full-width" appearance="outline">
+            <mat-label>Título</mat-label>
+            <input
+              formControlName="titulo"
+              type="text"
+              matInput
+              placeholder="EX: Titulo do Bonus"
+            />
+          </mat-form-field>
+
+          <mat-form-field class="example-full-width" appearance="outline">
+            <mat-label>Descrição</mat-label>
+            <input
+              formControlName="descricao"
+              type="text"
+              matInput
+              placeholder="EX: Descrição do Bonus"
+            />
+          </mat-form-field>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <br><br>
+
+  <div class="group-buttons">
+    <button (click)="addItem()" mat-raised-button color="primary">
+      Adicionar novo Bônus
+    </button>
+    <button (click)="enviarBonus()" mat-raised-button color="primary">
+      Enviar
+    </button>
+  </div>
+
+  <br>  <br>  <br>
+
+  
+  <div class="row">
+    <h2>Status Bonus</h2>
+  </div>
+
+  <div class="row">
+    <input type="checkbox" id="statusBonus" name="statusBonus" [(ngModel)]="statusBonus" (change)="enviarStatusBonus()"/>
+    <label for="statusBonus">Deseja Habilitar o Módulo de Bonus?</label>
+  </div>
+
+  <br><br> <br><br> <br><br>
+</div>

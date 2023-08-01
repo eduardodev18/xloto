@@ -1,0 +1,15 @@
+<h1 mat-dialog-title>Veja quem já comprou ✔️</h1>
+<div mat-dialog-content>
+
+  <div class="modal-body" *ngIf="compradores">
+    <div class="item" *ngFor="let item of compradores">
+      <div class="left">
+        <h3>{{ item.loterica }}</h3>
+        <p>{{ item.nome }}</p>
+      </div>
+      <div class="right"><span>{{ item.data }}</span></div>
+    </div>
+  </div>
+</div>
+
+<button (click)="closeAll()">Fechar</button>

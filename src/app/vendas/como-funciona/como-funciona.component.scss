@@ -1,0 +1,127 @@
+.como-funciona-page {
+    background-color: #1565d8;
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-attachment: scroll;
+    position: relative;
+    background-size: cover;
+    margin-bottom: 150px;
+
+    .title {
+        padding-top: 110px;
+        text-align: center;
+        margin-bottom: 40px;
+
+        h2 {
+            color: #fff;
+            font-size: 36px;
+            font-family: "Circular Std";
+            margin-bottom: 35px;
+
+            @media (max-width: 992px) {
+                font-size: 30px;
+            }
+        }
+
+        p {
+            color: #fff;
+            font-size: 18px;
+            font-family: "Circular Std";
+            margin-bottom: 8px;
+            line-height: 28px;
+
+            @media (max-width: 992px) {
+                font-size: 14px;
+                padding: 0 15px;
+            }
+        }
+    }
+
+    .box {
+        margin-bottom: 80px;
+
+        @media (max-width: 992px) {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 0 15px;
+        }
+
+        h2 {
+            display: flex;
+            justify-content: center;
+            background-color: #fff;
+            border-radius: 50%;
+            position: relative;
+            height: 40px;
+            width: 40px;
+            color: #1565d8;
+            font-size: 22px;
+            align-items: center;
+            font-family: "Circular Std";
+            margin-bottom: 25px;
+
+            span {
+                background-color: #ffffff;
+                height: 1px;
+                width: 140px;
+                position: absolute;
+                right: -175px;
+                box-shadow: -1px 0px 17px 2px #e7e7e7;
+                font-family: "Circular Std";
+
+                @media (max-width: 992px) {
+                    display: none;
+                }
+            }
+        }
+
+        h4 {
+            color: #fff;
+            font-size: 20px;
+            margin-bottom: 15px;
+            font-family: "Circular Std";
+            margin-bottom: 10px;
+        }
+
+        p {
+            color: #fff;
+            font-size: 16px;
+            font-family: "Circular Std";
+            margin-bottom: 8px;
+            line-height: 23px;
+
+            @media (max-width: 992px) {
+                text-align: center;
+            }
+        }
+    }
+
+    button {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto;
+        border-radius: 35px;
+        background-color: transparent;
+        border: 3px solid #fff;
+        font-family: "Circular Std";
+        color: #fff;
+        font-size: 18px;
+        font-weight: bold;
+        height: 50px;
+        width: 295px;
+        margin-bottom: 80px;
+
+        @media (max-width: 992px) {
+            margin: 0 auto 40px auto;
+            display: block;
+            width: 100%;
+        }
+
+        img {
+            margin-right: 5px;
+        }
+    }
+}

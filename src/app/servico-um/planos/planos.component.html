@@ -1,0 +1,467 @@
+<div class="planos-pagina">
+    <div class="container">
+        <div class="row titulo">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                <h2>Planos</h2>
+                <h3>Escolha um plano</h3>
+                <p>Tenha mais tempo, liberdade e controle na gestão da sua casa lotérica. Escolha um dos
+                    planos abaixo, tenha desconto com <br>
+                    pagamento anual e + desconto comprando com amigos.
+                </p>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                <div class="toggle-box">
+                    <p>Mensal</p><label class="switch"><input type="checkbox" (change)="switchPlanos($event)"><span
+                            class="slider round"></span></label>
+                    <p>Anual</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="row planos">
+            <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+                <div class="card" data-aos="zoom-out-down" data-aos-offset="300" data-aos-easing="ease-in-sine"
+                    *ngIf="planoBasicoMensal">
+                    <h3>PLANO BÁSICO</h3>
+                    <h4>Quantos terminais deseja contratar ?</h4>
+
+                    <div class="box-increment">
+                        <img src="/assets/img/button-decrement.svg" alt=""
+                            (click)="decrementPlanoBasico(planoEscolhidoBasico)">
+                        <p>{{ planoEscolhidoBasico.qtd }} <span>terminais</span></p>
+                        <img src="/assets/img/button-increment.svg" alt=""
+                            (click)="incrementPlanoBasico(planoEscolhidoBasico)">
+                    </div>
+
+                    <h5><span>R$</span> {{ planoEscolhidoBasico.valor }}/<span>Mês</span></h5>
+
+                    <p> <img src="/assets/img/icon-checked-verde.svg" alt="" srcset=""> Metas da lotérica
+                        <span class="material-icons-outlined"
+                            matTooltip="Crie meta para bolões, jogos, decêndios e autenticação para sua lotérica">
+                            info
+                        </span>
+                    </p>
+                    <p>
+                        <img src="/assets/img/icon-checked-verde.svg" alt="" srcset=""> Metas para colaboradores
+                        <span class="material-icons-outlined"
+                            matTooltip="Crie metas de bolões, jogos, decêndios e autenticação para seus colaboradores">
+                            info
+                        </span>
+                    </p>
+                    <p>
+                        <img src="/assets/img/icon-checked-verde.svg" alt="" srcset="">Alerta de declínio financeiro
+                        <span class="material-icons-outlined"
+                            matTooltip="Você acompanha rapidamente qual setor da lotérica está em declínio financeiro">
+                            info
+                        </span>
+                    </p>
+
+                    <mat-accordion>
+                        <mat-expansion-panel hideToggle>
+                            <mat-expansion-panel-header>
+                                <mat-panel-title>
+                                    <span class="material-icons-outlined">
+                                        touch_app
+                                    </span> Conhecer todas as funcionalidades
+                                </mat-panel-title>
+                            </mat-expansion-panel-header>
+                            <p><img src="/assets/img/icon-checked-verde.svg" alt="" srcset=""> Comparação dos setores
+                                <span class="material-icons-outlined"
+                                    matTooltip="Compare jogos, bolões, decêndios, comparando ano atual com ano anterior ou período desejado">
+                                    info
+                                </span>
+                            </p>
+                            <p><img src="/assets/img/icon-checked-verde.svg" alt="" srcset="">
+
+                                Análise financeira
+                                <span class="material-icons-outlined"
+                                    matTooltip="Receitas e despesas detalhadas em tela única, com indicador de impacto, gráficos e valores">
+                                    info
+                                </span>
+                            </p>
+                            <p><img src="/assets/img/icon-checked-verde.svg" alt="" srcset="">
+                                Agenda de compromissos
+                                <span class="material-icons-outlined"
+                                    matTooltip="Agende compromissos, tarefas ou a fazeres, com recorrência de 3 níveis de agendamento">
+                                    info
+                                </span>
+                            </p>
+                            <p><img src="/assets/img/icon-checked-verde.svg" alt="" srcset=""> Envio de mensagens
+                                lotérica
+                                <span class="material-icons-outlined"
+                                    matTooltip="Comunicação entre colaboradores, gestores e XLOTO, com caixa de entrada e caixa de saída">
+                                    info
+                                </span>
+                            </p>
+                            <p><img src="/assets/img/icon-checked-verde.svg" alt="" srcset="">Produção dos atendentes
+                                <span class="material-icons-outlined"
+                                    matTooltip="Análise colaboradores em todos os setores da lotérica por meio de gráficos, porcentagem e valores">
+                                    info
+                                </span>
+                            </p>
+                            <p><img src="/assets/img/icon-checked-verde.svg" alt="" srcset=""> Relatório consolidado
+                                <span class="material-icons-outlined"
+                                    matTooltip="Relatório impresso simplificado, de fácil entendimento de todos os setores da lotérica">
+                                    info
+                                </span>
+                            </p>
+                            <p>
+                                <img src="/assets/img/icon-checked-verde.svg" alt="" srcset=""> Controle de acesso
+                                <span class="material-icons-outlined"
+                                    matTooltip="Permite compartilhar trabalho com pessoas que não trabalham na lotérica, mediante aprovação do lotérico">
+                                    info
+                                </span>
+                            </p>
+                            <p>
+                                <img src="/assets/img/icon-checked-verde.svg" alt="" srcset=""> Controle de decêndios
+                                <span class="material-icons-outlined"
+                                    matTooltip="Todos os relatórios de decêndio em tela única, de forma organizada, permitindo comparações entre períodos">
+                                    info
+                                </span>
+                            </p>
+                            <p>
+                                <img src="/assets/img/icon-checked-verde.svg" alt="" srcset=""> Controle de comissões
+                                <span class="material-icons-outlined"
+                                    matTooltip="Controle de decêndios, jogos, bolões, produtos e serviços, por meio de gráficos, porcentagem e comparações">
+                                    info
+                                </span>
+                            </p>
+                            <p>
+                                <img src="/assets/img/icon-checked-verde.svg" alt="" srcset=""> Painel do administrador
+                                <span class="material-icons-outlined"
+                                    matTooltip="Tela inicial do sistema, com informações relevantes de todos os setores, por meio de valores e gráficos">
+                                    info
+                                </span>
+                            </p>
+                            <p>
+                                <img src="/assets/img/icon-checked-verde.svg" alt="" srcset=""> Análise anual dos
+                                resultados
+                                <span class="material-icons-outlined"
+                                    matTooltip="Visão anual de todos os setores da lotérica com informações em gráficos e valores em tela única">
+                                    info
+                                </span>
+                            </p>
+                            <p>
+                                <img src="/assets/img/icon-checked-verde.svg" alt="" srcset=""> Controle de despesas
+                                <span class="material-icons-outlined"
+                                    matTooltip="Despesas organizadas por categoria e descrição com porcentagem representativa de cada despesa">
+                                    info
+                                </span>
+                            </p>
+                            <p>
+                                <img src="/assets/img/icon-checked-verde.svg" alt="" srcset=""> Controle de produtos
+                                <span class="material-icons-outlined"
+                                    matTooltip="Produtos organizados por categoria e descrição com porcentagem representativa de cada produto">
+                                    info
+                                </span>
+                            </p>
+                            <p>
+                                <img src="/assets/img/icon-checked-verde.svg" alt="" srcset="">
+                                Controle de serviços
+                                <span class="material-icons-outlined"
+                                    matTooltip="Serviços organizados por categoria e descrição com porcentagem representativa de cada serviço">
+                                    info
+                                </span>
+                            </p>
+                            <p>
+                                <img src="/assets/img/icon-checked-verde.svg" alt="" srcset=""> Controle de
+                                autenticações
+                                <span class="material-icons-outlined"
+                                    matTooltip="Analisa a relação entre jogos e serviços bancários, com indicativos por gráficos,  porcentagem e comparação">
+                                    info
+                                </span>
+                            </p>
+                            <p>
+                                <img src="/assets/img/icon-checked-verde.svg" alt="" srcset=""> Perfil de acesso/
+                                usuários
+                                <span class="material-icons-outlined"
+                                    matTooltip="O colaborador só visualiza, altera e exclui informações que o lotérico permitir">
+                                    info
+                                </span>
+                            </p>
+                            <p>
+                                <img src="/assets/img/icon-checked-verde.svg" alt="" srcset=""> Média mensal dos setores
+                                <span class="material-icons-outlined"
+                                    matTooltip="Permite saber a média mensal de jogos, bolões e decêndios, mostrando ano corrente com ano passado">
+                                    info
+                                </span>
+                            </p>
+                            <p><img src="/assets/img/icon-checked-verde.svg" alt="" srcset=""> Registro de ocorrências
+                                <span class="material-icons-outlined"
+                                    matTooltip="Possibilita registrar fatos relevantes ocorridos no interior da lotérica, chamados, folgas, atestados.">
+                                    info
+                                </span>
+                            </p>
+                            <p><img src="/assets/img/icon-checked-verde.svg" alt="" srcset=""> Cadastro cliente
+                                potencial
+                                <span class="material-icons-outlined"
+                                    matTooltip="Permite registrar clientes relacionando com tipo de serviço e valor que gasta na lotérica">
+                                    info
+                                </span>
+                            </p>
+                            <p><img src="/assets/img/icon-checked-verde.svg" alt="" srcset=""> Últimos lançamentos
+                                <span class="material-icons-outlined"
+                                    matTooltip="Permite ver os lançamentos relevantes mais recentes na tela inicial do sistema">
+                                    info
+                                </span>
+                            </p>
+                        </mat-expansion-panel>
+                    </mat-accordion>
+
+                    <button mat-raised-button (click)="comprar(1)">COMPRAR AGORA</button>
+                </div>
+            </div>
+
+            <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+                <div class="card" data-aos="zoom-out-down" data-aos-offset="300" data-aos-easing="ease-in-sine"
+                    *ngIf="planoCompletoMensal">
+                    <h3>PLANO COMPLETO</h3>
+                    <h4>Quantos terminais deseja contratar ?</h4>
+
+                    <div class="box-increment">
+                        <img src="/assets/img/button-decrement.svg" alt=""
+                            (click)="decrementPlanoCompleto(planoEscolhidoCompleto)">
+                        <p>{{ planoEscolhidoCompleto.qtd }} <span>terminais</span></p>
+                        <img src="/assets/img/button-increment.svg" alt=""
+                            (click)="incrementPlanoCompleto(planoEscolhidoCompleto)">
+                    </div>
+                    <a href="https://xloto.com.br/simulador-gestao" target="_blank">
+                        <div class="box-preco">
+                            <div class="box-preco__top">
+                                <h5><span>R$</span> {{ planoEscolhidoCompleto.valor }}/<span>Mês</span></h5>
+                                <span class="preposicao">ou</span>
+                            </div>
+
+                            <div class="box-preco__bottom">
+                                <h6><strong>Ganhe desconto</strong> comprando com 10 amigos.</h6>
+                            </div>
+
+                            <div class="box-preco__flag">
+                                <p>Ver promoção</p>
+                                <img src="/assets/img/seta-branca-esquerda.svg" alt="" srcset="">
+                            </div>
+                        </div>
+                    </a>
+
+
+                    <div class="promocao">
+                        <p>44% OFF COM <br> 10 AMIGOS</p>
+                    </div>
+
+                    <div class="experimente">
+                        <p>EXPERIMENTE TODO CONTEÚDO <br> POR 30 DIAS</p>
+                    </div>
+
+                    <a href="https://youtu.be/jtWwTnVM7CE" target="_blank">
+                        <div class="box-youtube">
+                            <p> Conheça o sistema detalhadamente <br>
+                                clicando no vídeo ao lado. </p><img src="/assets/img/youtube-log.svg">
+                        </div>
+                    </a>
+
+                    <p> <img src="/assets/img/icon-checked-verde.svg" alt="" srcset=""> Todas recursos plano básico
+                        +
+                    </p>
+                    <p><img src="/assets/img/icon-checked-verde.svg" alt="" srcset=""> Fechamento dos caixas
+                        <span class="material-icons-outlined"
+                            matTooltip="Realiza o controle contábil dos caixas, fechando com o resumo do dia do TFL, apontando a diferença de caixa">
+                            info
+                        </span>
+                    </p>
+                    <p><img src="/assets/img/icon-checked-verde.svg" alt="" srcset="">Controle de sangrias
+                        <span class="material-icons-outlined"
+                            matTooltip="Controla todas as sangrias, despesas, retiradas de caixas dos atendentes de forma organizada, podendo filtrar e ordenar">
+                            info
+                        </span>
+                    </p>
+
+                    <mat-accordion>
+                        <mat-expansion-panel hideToggle>
+                            <mat-expansion-panel-header>
+                                <mat-panel-title>
+                                    <span class="material-icons-outlined">
+                                        touch_app
+                                    </span> Conhecer todas as funcionalidades
+                                </mat-panel-title>
+                            </mat-expansion-panel-header>
+                            <p>
+                                <img src="/assets/img/icon-checked-verde.svg" alt="" srcset=""> Controle de malotes
+                                <span class="material-icons-outlined"
+                                    matTooltip="Permite consultar a guia de numerário e todas as sangrias enviadas no malote. Consulta rápida e organizada">
+                                    info
+                                </span>
+                            </p>
+                            <p>
+                                <img src="/assets/img/icon-checked-verde.svg" alt="" srcset=""> Controle de fiados
+                                <span class="material-icons-outlined"
+                                    matTooltip="Permite controlar fiados de amigos, clientes ou própria lotérica, com mecanismo de anotações e baixas após quitação">
+                                    info
+                                </span>
+                            </p>
+                            <p>
+                                <img src="/assets/img/icon-checked-verde.svg" alt="" srcset=""> Diferenças de caixas
+                                <span class="material-icons-outlined"
+                                    matTooltip="Controla as diferenças de caixas do dia, mês e ano, com visão simplificada por gráfico valores e porcentagem">
+                                    info
+                                </span>
+                            </p>
+                            <p>
+                                <img src="/assets/img/icon-checked-verde.svg" alt="" srcset=""> Controle de
+                                retaguarda
+                                <span class="material-icons-outlined"
+                                    matTooltip="Controla o estoque de moedas, tele senas, loteria federal e dinheiro para saques, a fim de atender os caixas">
+                                    info
+                                </span>
+                            </p>
+                            <p>
+                                <img src="/assets/img/icon-checked-verde.svg" alt="" srcset=""> Pix, cheques e
+                                cartão
+                                <span class="material-icons-outlined"
+                                    matTooltip="Controla Pix, cartão e cheques, possibilitando anotações de acompanhamento e baixas após quitação">
+                                    info
+                                </span>
+                            </p>
+                            <p>
+                                <img src="/assets/img/icon-checked-verde.svg" alt="" srcset=""> Relatórios impressos
+                                <span class="material-icons-outlined"
+                                    matTooltip="Possibilita imprimir relatórios simplificados dos diversos setores da lotérica, sendo, jogos, bolões, decêndios e etc.">
+                                    info
+                                </span>
+                            </p>
+                            <p>
+                                <img src="/assets/img/icon-checked-verde.svg" alt="" srcset="">
+                                Conciliação bancária
+                                <span class="material-icons-outlined"
+                                    matTooltip="Permite saber se a CEF está creditando e debitando corretamente na conta 043">
+                                    info
+                                </span>
+                            </p>
+                            <p>
+                                <img src="/assets/img/icon-checked-verde.svg" alt="" srcset=""> Relatórios
+                                detalhados
+                                <span class="material-icons-outlined"
+                                    matTooltip="Permite visualizar relatórios detalhados dos diversos setores, possibilitando filtrar e ordenar por assuntos">
+                                    info
+                                </span>
+                            </p>
+                            <p>
+                                <img src="/assets/img/icon-checked-verde.svg" alt="" srcset=""> Conferência de
+                                decêndio
+                                <span class="material-icons-outlined"
+                                    matTooltip="Permite saber se os decêndios pagos pela CEF estão corretos ">
+                                    info
+                                </span>
+                            </p>
+                            <p><img src="/assets/img/icon-checked-verde.svg" alt="" srcset=""> Conferência diária
+                                <span class="material-icons-outlined"
+                                    matTooltip=" Possibilita saber o que a CEF pagou no dia em relação a serviços bancários.">
+                                    info
+                                </span>
+                            </p>
+                            <p>
+                                <img src="/assets/img/icon-checked-verde.svg" alt="" srcset=""> Acesso múltiplas
+                                lotéricas
+                                <span class="material-icons-outlined"
+                                    matTooltip="Acesse todas suas lotéricas com apenas 1 clique, sem ter que logar novamente">
+                                    info
+                                </span>
+                            </p>
+                            <p>
+                                <img src="/assets/img/icon-checked-verde.svg" alt="" srcset=""> Anotações contábeis
+                                <span class="material-icons-outlined"
+                                    matTooltip="Permite realizar anotações de débito e crédito de natureza diversa, como se fosse um bloco de notas">
+                                    info
+                                </span>
+                            </p>
+                            <p>
+                                <img src="/assets/img/icon-checked-verde.svg" alt="" srcset=""> Extrato de comissão
+                                <span class="material-icons-outlined"
+                                    matTooltip="Detalha a comissão de jogos, bolões, decêndios e despesas, todas em tela única semelhante a um extrato bancário">
+                                    info
+                                </span>
+                            </p>
+                            <p><img src="/assets/img/icon-checked-verde.svg" alt="" srcset=""> Acesso ao app da
+                                XLOTO
+                                <span class="material-icons-outlined"
+                                    matTooltip="Acesso ao app da XLOTO - Possibilita controlar com exatidão, todos os setores da lotérica por meio do aplicativo mobile (Apple e Android) ">
+                                    info
+                                </span>
+                            </p>
+                            <p><img src="/assets/img/icon-checked-verde.svg" alt="" srcset=""> Envio RME para email
+                                (auto)
+                                <span class="material-icons-outlined"
+                                    matTooltip="Envio RME para email (auto) - Geração da guia de RME de forma automática com envio automático para o email da lotérica">
+                                    info
+                                </span>
+                            </p>
+                        </mat-expansion-panel>
+                    </mat-accordion>
+
+                    <button mat-raised-button (click)="comprar(2)">COMPRAR AGORA</button>
+                </div>
+            </div>
+
+
+            <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+                <div class="card" data-aos="zoom-out-down" data-aos-offset="300" data-aos-easing="ease-in-sine">
+                    <h3>PLANO CUSTOMIZADO</h3>
+
+                    <h4 class="funcionalidade">Podemos montar um plano customizado <br> para sua lotérica de acordo com
+                        as
+                        funcionalidades que necessitar</h4>
+
+
+                    <form action="">
+
+                        <div class="form-group">
+                            <img src="/assets/img/icon_user.svg" alt="" srcset="">
+                            <mat-form-field class="example-full-width" appearance="fill">
+                                <input type="text" matInput placeholder="Nome">
+                            </mat-form-field>
+                        </div>
+
+                        <div class="form-group">
+                            <span class="material-icons-outlined">
+                                whatsapp
+                            </span>
+                            <mat-form-field class="example-full-width" appearance="fill">
+                                <input type="text" matInput placeholder="Whatsapp">
+                            </mat-form-field>
+                        </div>
+
+                        <div class="form-group">
+                            <img src="/assets/img/icon_computador.svg" alt="" srcset="">
+                            <mat-form-field class="example-full-width" appearance="fill">
+                                <input type="text" matInput placeholder="Quantos terminais?">
+                            </mat-form-field>
+                        </div>
+
+                        <div class="form-group">
+                            <img src="/assets/img/icon_email.svg" alt="" srcset="">
+                            <mat-form-field class="example-full-width" appearance="fill">
+                                <input type="email" matInput placeholder="Email">
+                            </mat-form-field>
+                        </div>
+                    </form>
+
+                    <button mat-raised-button>ENVIAR CADASTRO</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="row desconto" [ngxScrollTo]="'#compraColetiva'">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                <p>GANHE 15% DE DESCONTO FECHANDO COM AMIGOS 🔥</p>
+            </div>
+        </div>
+
+        <div class="row arrow-down" [ngxScrollTo]="'#compraColetiva'">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-seta">
+                <img src="/assets/img/seta-branca-baixo.svg" alt="">
+            </div>
+        </div>
+    </div>
+</div>

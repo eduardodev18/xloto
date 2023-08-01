@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="202" height="80" viewBox="0 0 202 80">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.019" y1="0.141" x2="0.986" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#ef233c"/>
+      <stop offset="1" stop-color="#f46036"/>
+    </linearGradient>
+  </defs>
+  <g id="Badge" transform="translate(0 0)">
+    <g id="Layer">
+      <path id="Subtração_1" data-name="Subtração 1" d="M198,80H4a4,4,0,0,1-4-4V48l8.121-6.432a2,2,0,0,0,0-3.136L0,32V4A4,4,0,0,1,4,0H198a4,4,0,0,1,4,4V28.2a2.005,2.005,0,0,0-.716.367l-12.454,9.864a2,2,0,0,0,0,3.136l12.454,9.865A2,2,0,0,0,202,51.8V76A4,4,0,0,1,198,80Z" transform="translate(0 0)" fill="url(#linear-gradient)"/>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,42 @@
+<div class="chamada-top" *ngIf="dataPromocao">
+  <div class="chamada-top__left">
+    <h1>{{ dataPromocao.titulo }}</h1>
+    <p>{{ dataPromocao.descricao }}</p>
+
+    <div class="grupo-botoes">
+      <a
+        href="https://api.whatsapp.com/send?phone=5561996754537"
+        target="_blank"
+      >
+        <button mat-stroked-button>
+          <img src="/assets/img/whats.svg" alt="" srcset="" />
+          Falar com um especialista
+        </button>
+      </a>
+      <button mat-stroked-button [ngxScrollTo]="'#sessao3'">
+        Conhecer XLOTO
+      </button>
+    </div>
+  </div>
+
+  <div class="chamada-top__right">
+    <youtube-player [videoId]="dataPromocao.idVideo"></youtube-player>
+  </div>
+
+  <div class="chamada-top__mobile">
+    <div class="grupo-botoes">
+      <a
+        href="https://api.whatsapp.com/send?phone=5561999449985"
+        target="_blank"
+      >
+        <button mat-stroked-button>
+          <img src="/assets/img/whats.svg" alt="" srcset="" />
+          Falar com um especialista
+        </button>
+      </a>
+      <button mat-stroked-button [ngxScrollTo]="'#sessao3'">
+        Conhecer XLOTO
+      </button>
+    </div>
+  </div>
+</div>

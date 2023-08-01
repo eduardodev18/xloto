@@ -1,0 +1,66 @@
+<div class="cadastroPage">
+
+    <div class="container">
+        <div class="row row-eric">
+            <div class="col-md-6 left">
+                <h3>Eric Alves um lotérico especialista <br> em gestão para
+                    lotéricas.</h3>
+                <p>Eric Alves é apaixonado por tecnologia e empresário lotérico desde 2008.
+                    Formado em Marketing, e atuante no ecossistemas de startups, fundou a XLOTO sistemas para lotéricas,
+                    onde vem ajudando vários amigos lotéricos na gestão de suas empresas.</p>
+                <div class="group">
+                    <a href="https://calendly.com/suporte-xloto/15min?month=2021-08" target="_blank">
+                        <button class="btn btn-adquirir">Agendar uma apresentação</button>
+                    </a>
+
+                    <a href="https://api.whatsapp.com/send?phone=5561999449985" target="_blank">
+                        <button class="btn btn-conhecer">Fala com um especialista</button>
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-6 right"><img src="/assets/img/homem-negocios.svg" alt="" srcset=""></div>
+        </div>
+    </div>
+
+</div>
+
+
+<div class="formularioContato">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12 col-md-6 left">
+                <h3>Somos lotéricos especialistas em <br> gestão para
+                    lotéricas.</h3>
+                <ul>
+                    <li><a href="https://api.whatsapp.com/send?phone=5561999449985" target="_blank"><img src="/assets/img/whatsapp.svg"
+                                alt="" srcset="" class="whatsapp"> (61) 9 9944-9985</a>
+                    </li>
+                    <li><a href="emailto:comercial@xloto.com.br" target="_blank"><img src="/assets/img/email.svg" alt="" srcset="">
+                            comercial@xloto.com.br</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-xs-12 col-md-6 right">
+                <div class="card" id="sessao5">
+                    <h3>Entrar em contato</h3>
+                    <form>
+                        <mat-form-field class="example-full-width" appearance="outline">
+                            <mat-label>Email</mat-label>
+                            <input type="email" matInput placeholder="Ex. xloto@examplo.com" #inputEmail>
+                        </mat-form-field>
+                        <mat-form-field class="example-full-width" appearance="outline">
+                            <mat-label>Nome</mat-label>
+                            <input type="text" matInput placeholder="Nome" #inputNome>
+                        </mat-form-field>
+                        <mat-form-field class="example-full-width" appearance="outline">
+                            <mat-label>Mensagem</mat-label>
+                            <textarea matInput placeholder="Escreva sua mensagem..." #inputMensagem></textarea>
+                        </mat-form-field>
+                        <button
+                            (click)="enviarCadastro(inputEmail.value, inputNome.value,inputMensagem.value )">Enviar</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

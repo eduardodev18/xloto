@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="57" height="57" viewBox="0 0 57 57">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Retângulo_102" data-name="Retângulo 102" width="32" height="32" transform="translate(1057 6276)" fill="#fff" stroke="#707070" stroke-width="1"/>
+    </clipPath>
+  </defs>
+  <g id="facebook" transform="translate(0.5 0.5)">
+    <circle id="Oval_8" data-name="Oval 8" cx="28" cy="28" r="28" fill="none" stroke="#005cc7" stroke-miterlimit="10" stroke-width="1" opacity="0.2"/>
+    <g id="Grupo_de_máscara_6" data-name="Grupo de máscara 6" transform="translate(-1045 -6264)" clip-path="url(#clip-path)">
+      <g id="_005-whatsapp" data-name="005-whatsapp" transform="translate(1057 6276)">
+        <path id="Caminho_156" data-name="Caminho 156" d="M15.224.019A15.877,15.877,0,0,0,1.857,23.078L.172,31.257a.618.618,0,0,0,.747.726l8.014-1.9A15.872,15.872,0,1,0,15.224.019Zm9.563,24.639A12.435,12.435,0,0,1,10.469,27l-1.116-.556L4.439,27.61l1.034-5.021-.55-1.077A12.438,12.438,0,0,1,7.213,7.084,12.427,12.427,0,1,1,24.787,24.658Z" fill="#7ad06d"/>
+        <path id="Caminho_157" data-name="Caminho 157" d="M23.7,19.312l-3.074-.883a1.146,1.146,0,0,0-1.134.3l-.752.766a1.12,1.12,0,0,1-1.218.257,16.411,16.411,0,0,1-5.295-4.669,1.12,1.12,0,0,1,.089-1.241l.656-.849a1.146,1.146,0,0,0,.141-1.164L11.823,8.9a1.146,1.146,0,0,0-1.79-.41,5.171,5.171,0,0,0-2,3.05c-.218,2.154.706,4.869,4.2,8.129,4.035,3.766,7.267,4.264,9.371,3.754a5.17,5.17,0,0,0,2.749-2.4A1.146,1.146,0,0,0,23.7,19.312Z" fill="#7ad06d"/>
+      </g>
+    </g>
+  </g>
+</svg>

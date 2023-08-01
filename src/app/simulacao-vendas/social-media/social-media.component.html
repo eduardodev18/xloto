@@ -1,0 +1,52 @@
+<div class="container">
+   
+    <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+            <div class="shared-box">
+                <h5>Compartilhe com seus amigos</h5>
+                <ul>
+                    <li>
+                        <a href="https://api.whatsapp.com/send?text=https://xloto.com.br/gestao"
+                            data-action="share/whatsapp/share">
+                            <img src="/assets/img/whats.svg" alt="">
+                        </a>
+                    </li>
+                    <li>
+                        <a (click)="fb($event)">
+                            <img src="/assets/img/facebook.svg" alt="" srcset="">
+                        </a>
+                    </li>
+                    <li>
+                        <a
+                            href="https://t.me/share/url?url=https://xloto.com.br/gestao&amp;text=https://xloto.com.br/gestao">
+                            <img src="/assets/img/telegram.svg" alt="" srcset="">
+                        </a>
+                    </li>
+                    <li>
+                        <a [cdkCopyToClipboard]="instagramValue" (click)="copyInstagram()">
+                            <img src="/assets/img/instagram.svg" alt="" srcset="">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+            <div class="box-pocentagem" *ngIf="compradores">
+                <h4><span>{{ compradores.length }}</span> pessoas já compraram! 🔥
+                </h4>
+                <div class="item">
+                    <div class="percent">
+                        <div class="percent-value" [style.width]="getPercent()"></div>
+                    </div>
+            
+                    <!-- <a (click)="openModalCompradores()"> 
+                        <img src="/assets/img/preview-orange.svg" alt="" srcset=""> VEJA QUEM JÁ COMPROU </a> -->
+                </div>
+            </div>            
+        </div>
+    </div>
+</div>

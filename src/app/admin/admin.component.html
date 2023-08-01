@@ -1,0 +1,27 @@
+<mat-toolbar>
+    <span>
+        <img src="/assets/img/logo-xloto.png" alt="" srcset="">
+    </span>
+
+    <ul>
+        <li (click)="choosetab(1)">
+            <mat-icon>shopping_cart</mat-icon>
+            <p>XLOTO Player</p>
+        </li>
+
+        <li (click)="choosetab(2)">
+            <mat-icon>subject</mat-icon>
+            <p>XLOTO Gestão</p>
+        </li>
+
+        <li (click)="choosetab(3)">
+            <mat-icon>subject</mat-icon>
+            <p>XLOTO Promoção</p>
+        </li>
+    </ul>
+</mat-toolbar>
+
+
+<app-vendas *ngIf="tab === 1"></app-vendas>
+<app-gestao *ngIf="tab === 2"></app-gestao>
+<app-promocao *ngIf="tab === 3"></app-promocao>

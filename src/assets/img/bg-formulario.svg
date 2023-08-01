@@ -1,0 +1,22 @@
+<svg id="BG" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1439.5" height="503" viewBox="0 0 1439.5 503">
+  <defs>
+    <linearGradient id="linear-gradient" x1="-0.086" y1="-0.438" x2="1.046" y2="1.7" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#1b3bd8"/>
+      <stop offset="0.315" stop-color="#176ce0"/>
+      <stop offset="0.492" stop-color="#0b92e7"/>
+      <stop offset="0.713" stop-color="#0bb6eb"/>
+      <stop offset="1" stop-color="#00e0f2"/>
+    </linearGradient>
+    <clipPath id="clip-path">
+      <rect id="Mask" width="1439.5" height="503" fill="url(#linear-gradient)"/>
+    </clipPath>
+    <linearGradient id="linear-gradient-2" x1="0.863" y1="-0.056" x2="0.328" y2="0.866" xlink:href="#linear-gradient"/>
+    <linearGradient id="linear-gradient-4" x1="-0.113" y1="-0.274" x2="1" y2="1.069" xlink:href="#linear-gradient"/>
+  </defs>
+  <rect id="Mask-2" data-name="Mask" width="1439.5" height="503" fill="#1565d8"/>
+  <g id="BG-2" data-name="BG" clip-path="url(#clip-path)">
+    <path id="Shape" d="M325.387,217c0,119.674-72.969,217-162.693,217S0,337.035,0,217C0,97.326,72.969,0,162.693,0,252.688,0,325.387,97.326,325.387,217Z" transform="translate(1152.35 230)" opacity="0.091" fill="url(#linear-gradient-2)"/>
+    <path id="Shape_Copy_3" data-name="Shape Copy 3" d="M82.471,55c0,30.332-18.494,55-41.236,55S0,85.424,0,55C0,24.668,18.494,0,41.236,0,64.045,0,82.471,24.668,82.471,55Z" transform="translate(868.198 33)" opacity="0.2" fill="url(#linear-gradient-2)"/>
+    <path id="Shape_Copy" data-name="Shape Copy" d="M68.976,46c0,25.369-15.468,46-34.488,46S0,71.445,0,46C0,20.631,15.468,0,34.488,0,53.565,0,68.976,20.631,68.976,46Z" transform="translate(512.072 342)" opacity="0.2" fill="url(#linear-gradient-4)"/>
+  </g>
+</svg>

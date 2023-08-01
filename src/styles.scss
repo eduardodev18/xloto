@@ -1,0 +1,190 @@
+/* You can add global styles to this file, and also import other style files */
+@import url(assets/reset/reset.scss);
+
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    font-family: 'Open Sans', sans-serif !important;
+    overflow-x: hidden !important;
+}
+
+
+@font-face {
+    font-family: 'Circular Std';
+    src: url('./assets/font/CircularStd-Bold.woff2') format('woff2'),
+        url('./assets/font/CircularStd-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Circular Std';
+    src: url('./assets/font/CircularStd-Black.woff2') format('woff2'),
+        url('./assets/font/CircularStd-Black.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Circular Std';
+    src: url('./assets/font/CircularStd-BlackItalic.woff2') format('woff2'),
+        url('./assets/font/CircularStd-BlackItalic.woff') format('woff');
+    font-weight: 900;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Circular Std Book';
+    src: url('./assets/font/CircularStd-Book.woff2') format('woff2'),
+        url('./assets/font/CircularStd-Book.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Circular Std';
+    src: url('./assets/font/CircularStd-Medium.woff2') format('woff2'),
+        url('./assets/font/CircularStd-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Circular Std';
+    src: url('./assets/font/CircularStd-MediumItalic.woff2') format('woff2'),
+        url('./assets/font/CircularStd-MediumItalic.woff') format('woff');
+    font-weight: 500;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Circular Std Book';
+    src: url('./assets/font/CircularStd-BookItalic.woff2') format('woff2'),
+        url('./assets/font/CircularStd-BookItalic.woff') format('woff');
+    font-weight: 500;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Circular Std';
+    src: url('./assets/font/CircularStd-BoldItalic.woff2') format('woff2'),
+        url('./assets/font/CircularStd-BoldItalic.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+
+@import '~@angular/material/theming';
+
+$custom-typography: mat-typography-config($font-family: 'Open Sans'
+    );
+
+@include angular-material-typography($custom-typography);
+
+.row {
+    @media (max-width: 992px) {
+        margin: 0px !important;
+    }
+}
+
+
+
+.mat-expansion-panel-body {
+    padding: 0 !important;
+    margin-top: 15px;
+}
+
+
+.count-down {
+    background: #fff;
+    border: 0 solid #dadada;
+    border-radius: 4.48px;
+    position: relative;
+    width: 100%;
+    padding: 20px 0 10px;
+
+}
+
+.count-down .count-down-row {
+    isplay: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    @media (max-width: 900px) {
+        font-size: 10px;
+    }
+}
+
+.count-down-row:nth-child(1) div {
+    background-color: #122c40;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 72px !important;
+    height: 49px !important;
+    padding: 0px !important;
+    margin-right: 35px !important;
+
+    @media (max-width: 992px) {
+        margin-right: 5px !important;
+    }
+}
+
+.count-down-row:nth-child(1) div span {
+    color: #fff;
+    font-size: 24px;
+    font-family: "Circular Std";
+}
+
+.count-down-row:nth-child(2) div {
+    width: 72px !important;
+    height: 49px !important;
+    padding: 0px !important;
+    margin-right: 35px !important;
+    font-family: "Circular Std";
+    margin-top: 5px;
+
+    @media (max-width: 992px) {
+        margin-right: 5px !important;
+    }
+}
+
+// INPUT MATERIAL
+
+
+.mat-form-field-appearance-fill .mat-form-field-flex {
+    background-color: transparent !important;
+}
+
+
+.cdk-global-scrollblock {
+    position: initial;
+    overflow-y: initial;
+}
+
+
+
+iframe {
+    width: 100%;
+
+    @media (max-width: 992px) {
+        margin-bottom: 20px;
+    }
+
+}

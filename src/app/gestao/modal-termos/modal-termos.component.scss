@@ -1,0 +1,41 @@
+.modal-termos {
+    .modal-header {
+        border-top: 7px solid #36b37e;
+        border-bottom: none;
+        padding: 24px 0;
+        font-size: 18px;
+        font-weight: bold;
+        text-align: center;
+        font-family: "Circular Std";
+    }
+
+    .modal-body {
+    
+
+        h6 {
+            font-size: 18px;
+            font-family: "Circular Std";
+            margin-bottom: 25px;
+            margin-top: 25px;
+        }
+
+        p {
+            font-size: 14px;
+            line-height: 22px;
+        }
+    }
+
+    button {
+        background: #36b37e;
+        border: none;
+        height: 50px;
+        color: #fff;
+        font-weight: bold;
+        border-radius: 35px;
+        font-family: "Circular Std";
+        margin-top: 20px;
+        margin: 20px auto 0 auto;
+        display: block;
+        width: 200px;
+    }
+}

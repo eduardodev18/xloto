@@ -1,0 +1,162 @@
+<div class="carousel-page">
+  <div class="container">
+    <div class="row carousel">
+      <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 left">
+        <div class="nav-carousel">
+          <img src="/assets/img/seta-carousel.svg" alt="" (click)="owlCar.prev()">
+          <img src="/assets/img/seta-carousel.svg" alt="" (click)="owlCar.next()">
+        </div>
+        <owl-carousel-o [options]="customOptions" (translated)="getPassedData($event)" #owlCar>
+
+          <ng-template carouselSlide id="slide-0">
+            <div class="slider">
+              <img src="/assets/img/white-mockup-1.png" alt="Slider 01" srcset="">
+              <div class="banner-item">
+                <span>01</span>
+                Lista favorita da lotérica
+              </div>
+            </div>
+          </ng-template>
+
+          <ng-template carouselSlide id="slide-1">
+            <div class="slider">
+              <img src="/assets/img/white-mockup-2.png" alt="Slider 02" srcset="">
+              <div class="banner-item">
+                <span>02</span>
+                Lista de informativos
+              </div>
+            </div>
+          </ng-template>
+
+          <ng-template carouselSlide id="slide-2">
+            <div class="slider">
+              <img src="/assets/img/white-mockup-3.png" alt="Slider 03" srcset="">
+              <div class="banner-item">
+                <span>03</span>
+                Programação horário fixo
+              </div>
+            </div>
+          </ng-template>
+
+          <ng-template carouselSlide id="slide-3">
+            <img src="/assets/img/white-mockup-4.png" alt="Slider 04" srcset="">
+            <div class="banner-item">
+              <span>04</span>
+              Criamos sua vinheta
+            </div>
+          </ng-template>
+
+          <ng-template carouselSlide id="slide-4">
+            <img src="/assets/img/white-mockup-5.png" alt="Slider 05" srcset="">
+            <div class="banner-item">
+              <span>05</span>
+              Treinamento da equipe
+            </div>
+          </ng-template>
+
+          <ng-template carouselSlide id="slide-5">
+            <img src="/assets/img/white-mockup-6.png" alt="Slider 06" srcset="">
+            <div class="banner-item">
+              <span>06</span>
+              Disparo de vinheta automática
+            </div>
+          </ng-template>
+
+          <ng-template carouselSlide id="slide-6">
+            <img src="/assets/img/white-mockup-7.png" alt="Slider 07" srcset="">
+            <div class="banner-item">
+              <span>07</span>
+              Disparo programado
+            </div>
+          </ng-template>
+
+          <ng-template carouselSlide id="slide-7">
+            <img src="/assets/img/white-mockup-8.png" alt="Slider 08" srcset="">
+            <div class="banner-item">
+              <span>08</span>
+              Atualização de jogos diários
+            </div>
+          </ng-template>
+
+          <ng-template carouselSlide id="slide-8">
+            <img src="/assets/img/white-mockup-9.png" alt="Slider 09" srcset="">
+            <div class="banner-item">
+              <span>09</span>
+              Venda de publicidade
+            </div>
+          </ng-template>
+
+          <ng-template carouselSlide id="slide-9">
+            <img src="/assets/img/white-mockup-10.png" alt="Slider 10" srcset="">
+            <div class="banner-item">
+              <span>10</span>
+              Notificação relâmpago
+            </div>
+          </ng-template>
+        </owl-carousel-o>
+
+
+        <div class="redes-sociais">
+          <a href="https://apps.apple.com/br/app/xloto/id1466708309" target="_blank">
+            <img src="/assets/img/logo-apple-store.svg" alt="Logo da Apple">
+          </a>
+          <a href="https://play.google.com/store/apps/details?id=br.com.xloto.app&hl=pt-BR" target="_blank">
+            <img src="/assets/img/logo-google-play-store.svg" alt="Logo de Android">
+          </a>
+        </div>
+      </div>
+
+      <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+        <div class="item" [ngClass]="{'active': activeSlides === 0}" (click)="owlCar.to('slide-0')">
+          <span>01</span>
+          <h3>Lista favorita da lotérica</h3>
+        </div>
+
+        <div class="item" [ngClass]="{'active': activeSlides === 1}" (click)="owlCar.to('slide-1')">
+          <span>02</span>
+          <h3>Lista de informativos</h3>
+        </div>
+
+        <div class="item" [ngClass]="{'active': activeSlides === 2}" (click)="owlCar.to('slide-2')">
+          <span>03</span>
+          <h3>Programação horário fixo</h3>
+        </div>
+
+        <div class="item" [ngClass]="{'active': activeSlides === 3}" (click)="owlCar.to('slide-3')">
+          <span>04</span>
+          <h3>Criamos sua vinheta</h3>
+        </div>
+
+        <div class="item" [ngClass]="{'active': activeSlides === 4}" (click)="owlCar.to('slide-4')">
+          <span>05</span>
+          <h3>Treinamento da equipe</h3>
+        </div>
+
+        <div class="item" [ngClass]="{'active': activeSlides === 5}" (click)="owlCar.to('slide-5')">
+          <span>06</span>
+          <h3>Disparo de vinheta automática</h3>
+        </div>
+
+        <div class="item" [ngClass]="{'active': activeSlides === 6}" (click)="owlCar.to('slide-6')">
+          <span>07</span>
+          <h3>Disparo programado</h3>
+        </div>
+
+        <div class="item" [ngClass]="{'active': activeSlides === 7}" (click)="owlCar.to('slide-7')">
+          <span>08</span>
+          <h3>Atualização de jogos diários</h3>
+        </div>
+
+        <div class="item" [ngClass]="{'active': activeSlides === 8}" (click)="owlCar.to('slide-8')">
+          <span>09</span>
+          <h3>Venda de publicidade</h3>
+        </div>
+
+        <div class="item" [ngClass]="{'active': activeSlides === 9}" (click)="owlCar.to('slide-9')">
+          <span>10</span>
+          <h3>Notificação relâmpago</h3>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

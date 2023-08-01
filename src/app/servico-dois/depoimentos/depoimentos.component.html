@@ -1,0 +1,117 @@
+<div class="depoimentos-pagina">
+  <div class="container">
+    <div class="row titulo">
+      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+        <h2>Depoimentos</h2>
+        <h3>O que os lotéricos falam sobre o XLOTO Gestão</h3>
+        <p>
+          Veja o que vários lotéricos por todo Brasil falam sobre o XLOTO gestão
+          em suas lotéricas. <br />
+          experiências positivas que contribuíram para um melhor controle e
+          produtividade.
+        </p>
+      </div>
+    </div>
+
+    <div class="row carousel-depoimentos">
+      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+        <div class="content-depoimentos">
+          <div class="card" *ngFor="let slide of slidesStore">
+            <img
+              _ngcontent-ver-c21=""
+              src="/assets/img/play-button_white.svg"
+              data-toggle="modal"
+              alt=""
+              class="play-video"
+              (click)="openDialog(slide)"
+            />
+
+            <img
+              _ngcontent-ver-c21=""
+              [src]="slide.foto"
+              alt="First slide"
+              class="d-block w-100 foto"
+              (click)="openDialog(slide)"
+            />
+
+            <h3>{{ slide.name }}</h3>
+            <p>{{ slide.loterica }}</p>
+            <button
+              mat-raised-button
+              color="primary"
+              (click)="openDialog(slide)"
+            >
+              Assistir video
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row promocao" *ngIf="dataPromocao">
+      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+        <h4>{{ dataPromocao.titulo }}</h4>
+        <p>
+          {{ dataPromocao.descricao }}
+        </p>
+
+        <div class="count">
+          <lib-angular-countdown-dateTime
+            [endDateBind]="endTime"
+            [dayText]="'DIAS'"
+            [hourText]="'HORAS'"
+            [minutesText]="'MINUTOS'"
+            [secondsText]="'SEGUNDOS'"
+          >
+          </lib-angular-countdown-dateTime>
+        </div>
+
+        <div class="group-button">
+          <a
+            href="https://api.whatsapp.com/send?phone=5561996754537"
+            target="_blank"
+          >
+            <button mat-stroked-button>
+              <img src="/assets/img/whats.svg" alt="" srcset="" />
+              Falar com um especialista
+            </button>
+          </a>
+        </div>
+
+        <div class="shared">
+          <p>Compartilhe com seus amigos!</p>
+          <ul>
+            <li>
+              <a
+                href="https://api.whatsapp.com/send?text=https://xloto.com.br/servico-tres"
+                data-action="share/whatsapp/share"
+              >
+                <img src="/assets/img/whats.svg" alt="" />
+              </a>
+            </li>
+            <li>
+              <a (click)="fb($event)">
+                <img src="/assets/img/facebook.svg" alt="" srcset="" />
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://t.me/share/url?url=https://xloto.com.br/servico-tres&amp;text=https://xloto.com.br/servico-tres"
+              >
+                <img src="/assets/img/telegram.svg" alt="" srcset="" />
+              </a>
+            </li>
+            <li>
+              <a
+                [cdkCopyToClipboard]="instagramValue"
+                (click)="copyInstagram()"
+              >
+                <img src="/assets/img/instagram.svg" alt="" srcset="" />
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

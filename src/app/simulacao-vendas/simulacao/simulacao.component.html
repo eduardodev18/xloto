@@ -1,0 +1,47 @@
+<div class="container">
+    <div class="row" *ngIf="compraColetiva">
+        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+            <h2>COMPRA COLETIVA COM 10 AMIGOS</h2>
+            <h3>Quanto terminais sua lotérica possui ?</h3>
+
+            <div class="box-simulacao">
+                <div class="left">
+                    <div class="box-increment">
+                        <img src="/assets/img/button-decrement.svg" alt="" (click)="decrement(planoEscolhido)">
+                        <p>{{ planoEscolhido.id }} <span>terminais</span></p>
+                        <img src="/assets/img/button-increment.svg" alt="" (click)="increment(planoEscolhido)">
+                    </div>
+
+                </div>
+
+                <div class="right">
+                    <h4><span>R$</span> {{ planoEscolhido.valor }}<span>/ANO</span></h4>
+                    <span>Parcelado em 12 X</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+            <div class="count">
+                <h5>Essa promoção encerra em:</h5>
+                <lib-angular-countdown-dateTime [endDateBind]="endTime" [dayText]="'DIAS'" [hourText]="'HORAS'"
+                    [minutesText]="'MINUTOS'" [secondsText]="'SEGUNDOS'"> </lib-angular-countdown-dateTime>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+            <div class="groups-buttons">
+                <button class="btn-green" mat-raised-button color="primary" (click)="comprar()">COMPRAR AGORA</button>
+                
+                <a href="https://www.youtube.com/watch?v=le2dFuclFeY&t=1s" target="_blank">
+                    <button class="btn-gray" mat-raised-button color="primary">
+                        <img src="assets/img/play-preto.svg" alt="" srcset="">
+                        CONHECER O SISTEMA</button>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="57" height="57" viewBox="0 0 57 57">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Retângulo_103" data-name="Retângulo 103" width="32" height="32" transform="translate(1090 6276)" fill="#fff" stroke="#707070" stroke-width="1"/>
+    </clipPath>
+  </defs>
+  <g id="twitter" transform="translate(0.5 0.5)">
+    <path id="Oval_8_Copy" data-name="Oval 8 Copy" d="M28,0A28,28,0,1,1,0,28,28,28,0,0,1,28,0Z" fill="none" stroke="#005cc7" stroke-width="1" opacity="0.2"/>
+    <g id="Grupo_de_máscara_7" data-name="Grupo de máscara 7" transform="translate(-1078 -6264)" clip-path="url(#clip-path)">
+      <path id="_036-facebook" data-name="036-facebook" d="M27.688,0H4.312A4.312,4.312,0,0,0,0,4.312V27.688A4.312,4.312,0,0,0,4.312,32H15.841l.02-11.435H12.89a.7.7,0,0,1-.7-.7l-.014-3.686a.7.7,0,0,1,.7-.7h2.965V11.915c0-4.133,2.524-6.384,6.211-6.384h3.026a.7.7,0,0,1,.7.7V9.341a.7.7,0,0,1-.7.7H23.222c-2.005,0-2.393.953-2.393,2.351v3.083h4.406a.7.7,0,0,1,.7.784l-.437,3.686a.7.7,0,0,1-.7.618H20.848L20.828,32h6.86A4.312,4.312,0,0,0,32,27.688V4.312A4.312,4.312,0,0,0,27.688,0Z" transform="translate(1090 6276)" fill="#475993"/>
+    </g>
+  </g>
+</svg>

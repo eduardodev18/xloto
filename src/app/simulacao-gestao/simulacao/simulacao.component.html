@@ -1,0 +1,48 @@
+<div class="container">
+    <div class="row" *ngIf="compraColetiva">
+        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+            <h2>COMPRA COLETIVA COM 10 AMIGOS</h2>
+            <p [ngxScrollTo]="'#sessao5'" class="desconto-25">Desconto de 25% no plano anual <span [ngxScrollTo]="'#sessao5'">Veja as regras</span></p>
+            <h3>Quanto terminais sua lotérica possui ?</h3>
+
+            <div class="box-simulacao">
+                <div class="left">
+                    <div class="box-increment">
+                        <img src="/assets/img/button-decrement.svg" alt="" (click)="decrement(planoEscolhido)">
+                        <p>{{ planoEscolhido.qtd }} <span>terminais</span></p>
+                        <img class="seta-right" src="/assets/img/button-increment.svg" alt="" (click)="increment(planoEscolhido)">
+                    </div>
+
+                </div>
+
+                <div class="right">
+                    <h4><span>R$</span> {{ planoEscolhido.valor }}<span>/MÊS</span></h4>
+                    <span>Plano anual parcelado em 12x <br> sem juros no cartão de crédito</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+            <div class="count">
+                <h5>Essa promoção encerra em:</h5>
+                <lib-angular-countdown-dateTime [endDateBind]="endTime" [dayText]="'DIAS'" [hourText]="'HORAS'"
+                    [minutesText]="'MINUTOS'" [secondsText]="'SEGUNDOS'"> </lib-angular-countdown-dateTime>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+            <div class="groups-buttons">
+                <button class="btn-green" mat-raised-button color="primary" (click)="comprar()">COMPRAR AGORA</button>
+                
+                <a href="https://www.youtube.com/watch?v=jtWwTnVM7CE" target="_blank">
+                    <button class="btn-gray" mat-raised-button color="primary">
+                        <img src="assets/img/play-preto.svg" alt="" srcset="">
+                        CONHECER O SISTEMA</button>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>

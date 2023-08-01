@@ -1,0 +1,50 @@
+<mat-toolbar>
+    <span class="example-spacer"></span>
+
+    <div class="logo">
+        <img src="/assets/img/logo-redondo-xloto.svg" alt="Logo Xloto">
+    </div>
+
+    <div class="title">
+        <h3>Aumente suas vendas de bolões
+            com o XLOTO Player</h3>
+        <p>Ofereça seus bolões para os seus clientes que estão na fila</p>
+    </div>
+
+    <div class="menu">
+        <ul>
+            <!-- <li [ngxScrollTo]="'#sessao1'">Início</li>
+            <li [ngxScrollTo]="'#sessao2'">Quem somos</li>
+            <li [ngxScrollTo]="'#sessao6'">Perguntas</li>
+            <li [ngxScrollTo]="'#sessao3'">Conhecer</li>
+            <li [ngxScrollTo]="'#sessao4'">Soluções</li> -->
+            <li>
+                <a href="https://api.whatsapp.com/send?phone=5561999449985" target="_blank">
+                    <button mat-stroked-button>
+                        <img src="/assets/img/whats.svg" alt="">
+                        Falar com o especialista</button>
+                </a>
+            </li>
+        </ul>
+    </div>
+</mat-toolbar>
+
+
+<!-- MENU MOBILE -->
+<mat-menu #menu="matMenu" [overlapTrigger]="false">
+    <button mat-menu-item [ngxScrollTo]="'#sessao1'">
+        <span>Início</span>
+    </button>
+    <button mat-menu-item [ngxScrollTo]="'#sessao2'">
+        <span>Quem somos</span>
+    </button>
+    <button mat-menu-item [ngxScrollTo]="'#sessao3'">
+        <span>Conhecer</span>
+    </button>
+    <button mat-menu-item [ngxScrollTo]="'#sessao4'">
+        <span>Soluções</span>
+    </button>
+    <button mat-menu-item [ngxScrollTo]="'#sessao5'">
+        <span>Contato</span>
+    </button>
+</mat-menu>

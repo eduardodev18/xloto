@@ -1,0 +1,23 @@
+<svg id="Background" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1440" height="428" viewBox="0 0 1440 428">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Base" width="1440" height="338" fill="#1565d8"/>
+    </clipPath>
+    <linearGradient id="linear-gradient" x1="1" y1="0.5" x2="0.003" y2="0.5" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#fff"/>
+      <stop offset="1" stop-color="#fff" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+  <rect id="Base-2" data-name="Base" width="1440" height="428" fill="#2f5d62"/>
+  <g id="Background-2" data-name="Background" transform="translate(0 45)" clip-path="url(#clip-path)">
+    <g id="Shape-1" transform="translate(-226 12)">
+      <path id="Shape" d="M.81,0H428.388a16,16,0,0,1,13.866,8.016l34.835,60.5a16,16,0,0,1,0,15.967l-34.835,60.5A16,16,0,0,1,428.388,153H0Z" transform="matrix(0.966, -0.259, 0.259, 0.966, 115.693, 229.343)" opacity="0.05" fill="url(#linear-gradient)"/>
+      <path id="Shape-2" data-name="Shape" d="M.81,0H428.388a16,16,0,0,1,13.866,8.016l34.835,60.5a16,16,0,0,1,0,15.967l-34.835,60.5A16,16,0,0,1,428.388,153H0Z" transform="matrix(0.966, -0.259, 0.259, 0.966, 0.407, 124.941)" opacity="0.05" fill="url(#linear-gradient)"/>
+    </g>
+    <g id="Shape-2-2" data-name="Shape-2" transform="matrix(0.966, -0.259, 0.259, 0.966, 1106.229, 29.678)">
+      <path id="Polygon" d="M67.5,4.33a15,15,0,0,1,15,0l49.952,28.84a15,15,0,0,1,7.5,12.99V103.84a15,15,0,0,1-7.5,12.99L82.5,145.67a15,15,0,0,1-15,0L17.548,116.83a15,15,0,0,1-7.5-12.99V46.16a15,15,0,0,1,7.5-12.99Z" opacity="0.05" fill="url(#linear-gradient)"/>
+      <path id="Polygon-2" data-name="Polygon" d="M67.5,4.33a15,15,0,0,1,15,0l49.952,28.84a15,15,0,0,1,7.5,12.99V103.84a15,15,0,0,1-7.5,12.99L82.5,145.67a15,15,0,0,1-15,0L17.548,116.83a15,15,0,0,1-7.5-12.99V46.16a15,15,0,0,1,7.5-12.99Z" transform="translate(82.5 135)" opacity="0.05" fill="url(#linear-gradient)"/>
+      <path id="Polygon-3" data-name="Polygon" d="M67.5,4.33a15,15,0,0,1,15,0l49.952,28.84a15,15,0,0,1,7.5,12.99V103.84a15,15,0,0,1-7.5,12.99L82.5,145.67a15,15,0,0,1-15,0L17.548,116.83a15,15,0,0,1-7.5-12.99V46.16a15,15,0,0,1,7.5-12.99Z" transform="translate(150)" opacity="0.05" fill="url(#linear-gradient)"/>
+    </g>
+  </g>
+</svg>

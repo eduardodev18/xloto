@@ -1,0 +1,29 @@
+<mat-toolbar [ngClass]="{'fixed': isFixed}">
+    <button mat-icon-button class="example-icon menu-hamburger" (click)="toggleMenu()">
+        <mat-icon>menu</mat-icon>
+    </button>
+    <span class="example-spacer"></span>
+
+    <div class="logo">
+        <img src="/assets/img/logo-redondo-xloto.svg" alt="Logo Xloto">
+    </div>
+
+    <div class="menu">
+        <ul>
+            <li [ngxScrollTo]="'#sessao1'">Início</li>
+            <li [ngxScrollTo]="'#sessao2'">Quem somos</li>
+            <li [ngxScrollTo]="'#sessao6'">Perguntas</li>
+            <li [ngxScrollTo]="'#sessao3'">Conhecer</li>
+            <li [ngxScrollTo]="'#sessao4'">Depoimentos</li>
+            <li [ngxScrollTo]="'#sessao5'">
+                <button mat-stroked-button>Contato</button>
+            </li>
+        </ul>
+    </div>
+</mat-toolbar>
+
+
+<!-- MENU MOBILE -->
+<div class="menu-mobile" *ngIf="menuToggle">
+    <app-menu-mobile (fecharMenu)="toggleMenu()"></app-menu-mobile>
+</div>

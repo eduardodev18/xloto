@@ -1,0 +1,46 @@
+<div class="depoimentos-pagina">
+    <div class="container">
+        <div class="row titulo">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                <h2>Depoimentos</h2>
+                <h3>O que os lotéricos e clientes falam do XLOTO Player</h3>
+                <p>Veja o que vários lotéricos por todo Brasil falam sobre o XLOTO play em suas lotéricas. <br>
+                    Experiências positivas que contribuíram para um aumento de produtividade.
+                </p>
+            </div>
+        </div>
+
+
+        <div class="row carousel-depoimentos">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+
+                <div class="nav-carousel">
+                    <img src="/assets/img/seta-carousel.svg" alt="" (click)="owlCar.prev()">
+                    <img src="/assets/img/seta-carousel.svg" alt="" (click)="owlCar.next()">
+                </div>
+
+
+                <owl-carousel-o [options]="customOptions" #owlCar>
+
+                    <ng-container *ngFor="let slide of slidesStore">
+                        <ng-template carouselSlide [id]="slide.id">
+                            <div class="card">
+                                <img _ngcontent-ver-c21="" src="/assets/img/play-button_white.svg" data-toggle="modal"
+                                    alt="" class="play-video" (click)="openDialog()">
+
+                                <img _ngcontent-ver-c21="" src="/assets/img/depoimento-img.svg" alt="First slide"
+                                    class="d-block w-100">
+
+
+                                <h3>{{ slide.name }}</h3>
+                                <p>{{ slide.loterica }}</p>
+                                <button mat-raised-button color="primary" (click)="openDialog()">Assistir video</button>
+                            </div>
+                        </ng-template>
+                    </ng-container>
+
+                </owl-carousel-o>
+            </div>
+        </div>
+    </div>
+</div>

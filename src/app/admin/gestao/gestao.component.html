@@ -1,0 +1,263 @@
+<div class="container-fluid">
+    <div class="row">
+        <h2>Plano Mensal- BÁSICO</h2>
+    </div>
+
+    <div class="row" *ngIf="planoMensalBasico">
+
+        <div class="col-md-6 col-lg-6">
+            <div class="item-planos" *ngFor="let item of planoMensalBasico; let i = index">
+                <mat-form-field class="example-full-width" appearance="outline">
+                    <mat-label>Valor {{ item.id }} TFL</mat-label>
+                    <input type="text" matInput placeholder="EX: R$ 285,00" #inputValorBasicoMensal>
+                </mat-form-field>
+
+                <button mat-raised-button color="primary"
+                    (click)="atualizarPlanoMensalBasico(i, 1, inputValorBasicoMensal.value)">Atualizar</button>
+
+
+                <mat-form-field class="example-full-width" appearance="outline">
+                    <mat-label>Link {{ item.id }} TFL</mat-label>
+                    <input type="text" matInput placeholder="EX: https:xloto" #inputLinkBasicoMensal>
+                </mat-form-field>
+
+                <button mat-raised-button color="primary"
+                    (click)="atualizarPlanoMensalBasico(i, 2, inputLinkBasicoMensal.value)">Atualizar</button>
+            </div>
+        </div>
+
+        <div class="col-md-6 col-lg-6">
+            <img src="/assets/img/planosVendas.png" class="legenda" alt="" srcset="">
+        </div>
+    </div>
+
+    <br><br>
+
+    <div class="row">
+        <h2>Plano Anual- BÁSICO</h2>
+    </div>
+
+    <div class="row" *ngIf="planoMensalAnual">
+
+        <div class="col-md-6 col-lg-6">
+            <div class="item-planos" *ngFor="let item of planoMensalAnual; let i = index">
+                <mat-form-field class="example-full-width" appearance="outline">
+                    <mat-label>Valor {{ item.id }} TFL</mat-label>
+                    <input type="text" matInput placeholder="EX: R$ 285,00" #inputValorBasicoAnual>
+                </mat-form-field>
+
+                <button mat-raised-button color="primary"
+                    (click)="atualizarPlanoAnualBasico(i, 1, inputValorBasicoAnual.value)">Atualizar</button>
+
+
+                <mat-form-field class="example-full-width" appearance="outline">
+                    <mat-label>Link {{ item.id }} TFL</mat-label>
+                    <input type="text" matInput placeholder="EX: https:xloto" #inputLinkBasicoAnual>
+                </mat-form-field>
+
+                <button mat-raised-button color="primary"
+                    (click)="atualizarPlanoAnualBasico(i, 2, inputLinkBasicoAnual.value)">Atualizar</button>
+            </div>
+        </div>
+
+        <div class="col-md-6 col-lg-6">
+            <img src="/assets/img/planosVendas.png" class="legenda" alt="" srcset="">
+        </div>
+    </div>
+
+    <br><br>
+
+    <div class="row">
+        <h2>Plano Mensal - COMPLETO</h2>
+    </div>
+
+    <div class="row" *ngIf="planoMensalCompleto">
+
+        <div class="col-md-6 col-lg-6">
+            <div class="item-planos" *ngFor="let item of planoMensalCompleto; let i = index">
+                <mat-form-field class="example-full-width" appearance="outline">
+                    <mat-label>Valor {{ item.id }} TFL</mat-label>
+                    <input type="text" matInput placeholder="EX: R$ 285,00" #inputValorCompletoMensal>
+                </mat-form-field>
+
+                <button mat-raised-button color="primary"
+                    (click)="atualizarPlanoMensalCompleto(i, 1, inputValorCompletoMensal.value)">Atualizar</button>
+
+
+                <mat-form-field class="example-full-width" appearance="outline">
+                    <mat-label>Link {{ item.id }} TFL</mat-label>
+                    <input type="text" matInput placeholder="EX: https:xloto" #inputLinkCompletoMensal>
+                </mat-form-field>
+
+                <button mat-raised-button color="primary"
+                    (click)="atualizarPlanoMensalCompleto(i, 2, inputLinkCompletoMensal.value)">Atualizar</button>
+            </div>
+        </div>
+
+        <div class="col-md-6 col-lg-6">
+            <img src="/assets/img/planosVendas.png" class="legenda" alt="" srcset="">
+        </div>
+    </div>
+
+
+    <br><br>
+
+    <div class="row">
+        <h2>Plano Anual - COMPLETO</h2>
+    </div>
+
+    <div class="row" *ngIf="planoAnualCompleto">
+
+        <div class="col-md-6 col-lg-6">
+            <div class="item-planos" *ngFor="let item of planoAnualCompleto; let i = index">
+                <mat-form-field class="example-full-width" appearance="outline">
+                    <mat-label>Valor {{ item.id }} TFL</mat-label>
+                    <input type="text" matInput placeholder="EX: R$ 285,00" #inputValorCompletoAnual>
+                </mat-form-field>
+
+                <button mat-raised-button color="primary"
+                    (click)="atualizarPlanoAnualCompleto(i, 1, inputValorCompletoAnual.value)">Atualizar</button>
+
+
+                <mat-form-field class="example-full-width" appearance="outline">
+                    <mat-label>Link {{ item.id }} TFL</mat-label>
+                    <input type="text" matInput placeholder="EX: https:xloto" #inputLinkCompletoAnual>
+                </mat-form-field>
+
+                <button mat-raised-button color="primary"
+                    (click)="atualizarPlanoAnualCompleto(i, 2, inputLinkCompletoAnual.value)">Atualizar</button>
+            </div>
+        </div>
+
+        <div class="col-md-6 col-lg-6">
+            <img src="/assets/img/planosVendas.png" class="legenda" alt="" srcset="">
+        </div>
+    </div>
+
+
+    <br><br>
+
+    <div class="row">
+        <h2>Compra Coletiva</h2>
+    </div>
+
+    <div class="row" *ngIf="compraColetiva">
+
+        <div class="col-md-6 col-lg-6">
+            <div class="item-planos" *ngFor="let item of compraColetiva; let i = index">
+                <mat-form-field class="example-full-width" appearance="outline">
+                    <mat-label>Valor {{ item.id }} TFL</mat-label>
+                    <input type="text" matInput placeholder="EX: R$ 285,00" #inputValorCompraColetiva>
+                </mat-form-field>
+
+                <button mat-raised-button color="primary"
+                    (click)="atualizarCompraColetiva(i, 1, inputValorCompraColetiva.value)">Atualizar</button>
+
+
+                <mat-form-field class="example-full-width" appearance="outline">
+                    <mat-label>Link {{ item.id }} TFL</mat-label>
+                    <input type="text" matInput placeholder="EX: https:xloto" #inputLinkCompraColetiva>
+                </mat-form-field>
+
+                <button mat-raised-button color="primary"
+                    (click)="atualizarCompraColetiva(i, 2, inputLinkCompraColetiva.value)">Atualizar</button>
+            </div>
+        </div>
+
+        <div class="col-md-6 col-lg-6">
+            <img src="/assets/img/vendaColetiva.png" class="legenda" alt="" srcset="">
+        </div>
+    </div>
+
+    <br><br>
+    <!-- QUEM JÁ COMPROU -->
+
+    <div class="row">
+        <h2>Quem já Comprou</h2>
+    </div>
+
+    <div class="row">
+        <div class="col-md-6 col-lg-6">
+            <div class="item-planos">
+                <mat-form-field class="example-full-width" appearance="outline">
+                    <mat-label>Nome do comprador</mat-label>
+                    <input type="text" matInput placeholder="EX: Eric Alves" #inputComprador>
+                </mat-form-field>
+
+                <mat-form-field class="example-full-width" appearance="outline">
+                    <mat-label>Lotérica</mat-label>
+                    <input type="text" matInput placeholder="EX: Lotérica Municipal" #inputLoterica>
+                </mat-form-field>
+
+                <mat-form-field class="example-full-width" appearance="outline">
+                    <mat-label>Data</mat-label>
+                    <input type="text" matInput placeholder="EX: 20/07/2021" #inputData>
+                </mat-form-field>
+
+                <button mat-raised-button color="primary"
+                    (click)="enviarComprador(inputComprador.value, inputLoterica.value, inputData.value)">Enviar</button>
+            </div>
+        </div>
+
+        <div class="col-md-6 col-lg-6">
+            <img src="/assets/img/compradores.png" alt="">
+        </div>
+    </div>
+
+    <br><br>
+    <div class="row">
+        <div class="col-md-12">
+            <table *ngIf="compradores">
+                <thead>
+                    <tr>
+                        <th>Nome</th>
+                        <th>Lotérica</th>
+                        <th>Data</th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let item of compradores; let i = index">
+                        <td>{{ item.nome }}</td>
+                        <td>{{ item.loterica }}</td>
+                        <td>{{ item.data }}</td>
+                        <td>
+                            <span class="material-icons-outlined" style="cursor: pointer;" (click)="deletarCompradores(i)">
+                                delete
+                            </span>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <br><br>
+
+    <!-- CONTATO -->
+
+    <div class="row">
+        <h2>Contato</h2>
+    </div>
+
+    <div class="row" *ngIf="contatos">
+        <div class="col-md-12 col-lg-12">
+            <table border="1">
+                <thead>
+                    <tr>
+                        <th>Email</th>
+                        <th>Nome</th>
+                        <th>Mensagem</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let item of contatos">
+                        <td>{{ item.email }}</td>
+                        <td>{{ item.nome }}</td>
+                        <td>{{ item.msg }}</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>

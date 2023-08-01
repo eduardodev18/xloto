@@ -1,0 +1,16 @@
+<div class="menu-mobile">
+
+    <img src="/assets/img/logo-redondo-xloto.svg">
+
+    <ul class="menu">
+        <li [ngxScrollTo]="'#sessao1'" (click)="scrollToSection('#sessao1')">Início</li>
+        <li [ngxScrollTo]="'#sessao2'" (click)="scrollToSection('#sessao2')">Quem somos</li>
+        <li [ngxScrollTo]="'#sessao6'" (click)="scrollToSection('#sessao6')">Perguntas</li>
+        <li [ngxScrollTo]="'#sessao3'" (click)="scrollToSection('#sessao3')">Conhecer</li>
+        <li [ngxScrollTo]="'#sessao4'" (click)="scrollToSection('#sessao4')">Depoimentos</li>
+        <li (click)="scrollToSection('#sessao4')">
+            <button mat-stroked-button>Fechar</button>
+        </li>
+    </ul>
+</div>
+

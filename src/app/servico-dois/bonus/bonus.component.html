@@ -1,0 +1,22 @@
+<div class="solucoes-pagina" *ngIf="statusData">
+    <div class="container">
+        <div class="row titulo">
+            <img src="/assets/img/bonus.svg" alt="" srcset="">
+            <h2>Comprando agora, você <br> garante bônus exclusivos 🎁</h2>
+        </div>
+
+        <div class="row">
+            <div class="groupItem">
+                <div class="box" *ngFor="let item of dataBonus">
+                    <div class="header"><span class="number"><img src="/assets/img/icon-checked-verde.svg" alt=""
+                                srcset=""></span>
+                        <h3>{{ item.titulo }}</h3>
+                    </div>
+                    <div class="body">
+                        <p>{{ item.descricao }}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

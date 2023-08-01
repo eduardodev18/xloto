@@ -1,0 +1,97 @@
+.mat-toolbar {
+    background-color: transparent;
+    height: auto;
+    margin-bottom: 100px;
+
+    .menu-hamburger {
+        display: none;
+
+        @media (max-width: 992px) {
+            display: block;
+        }
+
+        mat-icon {
+            color: white;
+        }
+    }
+
+    .title {
+
+        @media (max-width: 992px) {
+            display: none;
+        }
+
+        h3 {
+            color: white;
+            font-weight: bold;
+            font-size: 21px;
+            font-family: "Circular Std";
+        }
+
+        p {
+            color: white;
+            font-size: 16px;
+            font-weight: 200;
+        }
+    }
+
+    .logo {
+        width: 50%;
+        height: 95px;
+        display: flex;
+        align-items: center;
+        padding-top: 25px;
+
+        @media (max-width: 992px) {
+            display: flex;
+            justify-content: center;
+            width: 100%;
+            margin-right: 0px;
+        }
+    }
+
+    .menu {
+        display: flex;
+        justify-content: flex-end;
+        width: 50%;
+
+        @media (max-width: 992px) {
+            display: none;
+        }
+
+        ul {
+            display: flex;
+            align-items: center;
+
+            li {
+                cursor: pointer;
+                color: #fff;
+                font-family: "Open Sans", sans-serif;
+                font-size: 15px;
+                margin-right: 25px;
+
+                button {
+                    border: 2px solid #fff;
+                    border-radius: 6px;
+                    font-weight: bold;
+                    font-family: "Open Sans", sans-serif;
+                    padding: 0 22px;
+                    text-decoration: none;
+                    background-color: #fff;
+                    color: #36b37e;
+
+                    img {
+                        height: 30px;
+                        margin-right: 5px;
+                        margin-bottom: 1px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+a {
+    color: #fff;
+    text-decoration: none;
+}
