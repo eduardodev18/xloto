@@ -22,11 +22,7 @@ export class ModalDicasComponent implements AfterViewInit {
   ) {}
 
   ngAfterViewInit() {
-    // Código para adicionar o script na div específica
-    const script = this.renderer.createElement('script');
-    script.src =
-      'https://xloto-449630514394465361.myfreshworks.com/crm/sales/web_forms/9d926d75dcc91b9e9f946c428bb124fbee5e40d1422926416caead4269b839c9/form.js';
-    this.renderer.appendChild(this.divElementRef.nativeElement, script);
+   
   }
 
   enviarDicas() {

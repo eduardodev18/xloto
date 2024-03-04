@@ -20,15 +20,11 @@ export class CadastroComponent implements AfterViewInit {
   @ViewChild('divId', { static: true }) divElementRef: ElementRef;
 
   constructor(
-    private gestaoService: GestaoService,
-    private renderer: Renderer2
+    private gestaoService: GestaoService
   ) {}
 
   ngAfterViewInit() {
-    // Código para adicionar o script na div específica
-    const script = this.renderer.createElement('script');
-    script.src = 'https://xloto-449630514394465361.myfreshworks.com/crm/sales/web_forms/9d926d75dcc91b9e9f946c428bb124fbee5e40d1422926416caead4269b839c9/form.js';
-    this.renderer.appendChild(this.divElementRef.nativeElement, script);
+
   }
 
   enviarCadastro(email, nome, msg) {
