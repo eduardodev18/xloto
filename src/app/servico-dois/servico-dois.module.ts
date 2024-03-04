@@ -36,11 +36,13 @@ import { SolucoesComponent } from './solucoes/solucoes.component';
 import { XlotoComponent } from './xloto/xloto.component';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MenuMobileComponent } from './menu-mobile/menu-mobile.component';
+import { LoadingComponent } from './loading/loading.component';
+import { ModalBeneficiosComponent } from './modal-beneficios/modal-beneficios.component';
 
 
 
 @NgModule({
-  declarations: [ServicoDoisComponent, NavbarComponent, ChamadaComponent, DificuldadesComponent, SolucoesComponent, BeneficiosComponent, DepoimentosComponent, ModalVideoComponent, PlanosComponent, CompraColetivaComponent, ModalCompradoresComponent, ModalTermosComponent, BonusComponent, GarantiaComponent, ComoFuncionaComponent, FaqComponent, CadastroComponent, XlotoComponent, FooterComponent, ModalDicasComponent, MenuMobileComponent],
+  declarations: [ServicoDoisComponent, NavbarComponent, ChamadaComponent, DificuldadesComponent, SolucoesComponent, BeneficiosComponent, DepoimentosComponent, ModalVideoComponent, PlanosComponent, CompraColetivaComponent, ModalCompradoresComponent, ModalTermosComponent, BonusComponent, GarantiaComponent, ComoFuncionaComponent, FaqComponent, CadastroComponent, XlotoComponent, FooterComponent, ModalDicasComponent, MenuMobileComponent, LoadingComponent, ModalBeneficiosComponent],
   imports: [
     CommonModule,
     MatIconModule,

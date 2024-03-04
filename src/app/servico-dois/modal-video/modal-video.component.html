@@ -1,14 +1,14 @@
-<h1 mat-dialog-title *ngIf="data">{{ data.name }} - {{ data.loterica }}</h1>
-<div>
-  <video *ngIf="data" controls width="400" controlsList="nodownload">
-    <source src="{{ data.url }}" type="video/mp4" [width]="'400'"/>
-  </video>
-  <!-- <youtube-player
-    [videoId]="id"
-    (ready)="savePlayer($event)"
-    (change)="onStateChange($event)"
-  ></youtube-player> -->
-</div>
-<div mat-dialog-actions>
-  <button mat-stroked-button color="primary" mat-dialog-close>Fechar</button>
+<div class="modal-video">
+  <h1 mat-dialog-title *ngIf="data">{{ data.name }} - {{ data.loterica }}</h1>
+  <div>
+    <youtube-player
+      width="100%"
+      [videoId]="data.url"
+      (ready)="savePlayer($event)"
+      (change)="onStateChange($event)"
+    ></youtube-player>
+  </div>
+  <div mat-dialog-actions>
+    <button mat-stroked-button color="primary" mat-dialog-close>Fechar</button>
+  </div>
 </div>

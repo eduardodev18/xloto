@@ -7,10 +7,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ServicoDoisComponent implements OnInit {
   whatsappNumber: string = "5561996754537";
+  loading = false;
   
   constructor() { }
 
   ngOnInit(): void {
+    this.loading = true;
+
+    setTimeout(() => {
+      this.loading = false;
+    }, 3000);
   }
 
 }

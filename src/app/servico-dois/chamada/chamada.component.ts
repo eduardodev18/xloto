@@ -19,8 +19,6 @@ export class ChamadaComponent implements OnInit {
   buscarChamada() {
     this.promocaoService.buscarChamada().subscribe((res) => {
       this.dataPromocao = res[res.length - 1].value;
-
-      console.log("THIS", this.dataPromocao);
     })
   }
 }

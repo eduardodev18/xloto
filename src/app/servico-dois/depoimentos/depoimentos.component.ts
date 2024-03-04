@@ -42,31 +42,31 @@ export class DepoimentosComponent implements OnInit {
 
   slidesStore = [
     {
+      id: 3,
+      name: 'Sergio Saraiva',
+      loterica: 'Loteria Posto da Sorte - BA',
+      url: 'iM6dRCjIeIE',
+      foto: '/assets/img/sergiopng.png'
+    },
+    {
       id: 1,
       name: 'Rodrigo',
       loterica: 'Shopping da Sorte - RJ',
-      url: 'https://www.xloto.com.br/diversos_xloto/depoimentos/Depoimento%20Rodrigo.mp4',
+      url: 'WZyd_z_T1BQ',
       foto: '/assets/img/rodrigo.png'
     },
     {
       id: 2,
       name: 'Zélia Maria',
       loterica: 'Lotérica Goianésia - GO',
-      url: 'https://www.xloto.com.br/diversos_xloto/depoimentos/Depoimento%20Zelia.mp4',
+      url: '_AR8XeizOSw',
       foto: '/assets/img/zelia.png'
-    },
-    {
-      id: 3,
-      name: 'Sergio Saraiva',
-      loterica: 'Loteria Posto da Sorte - BA',
-      url: 'https://www.xloto.com.br/diversos_xloto/depoimentos/Depoimento%20Sergio.mp4',
-      foto: '/assets/img/sergiopng.png'
     },
     {
       id: 4,
       name: 'Catharina Gonçalves',
       loterica: ' Lotérica JC - RJ',
-      url: 'https://www.xloto.com.br/diversos_xloto/depoimentos/Depoimento%20Catharina.mp4',
+      url: 'spfXfbZRJMc',
       foto: '/assets/img/catarina.png'
     },
   ]
