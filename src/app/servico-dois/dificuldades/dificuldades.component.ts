@@ -8,6 +8,8 @@ import { ModalDicasComponent } from '../modal-dicas/modal-dicas.component';
   styleUrls: ['./dificuldades.component.scss']
 })
 export class DificuldadesComponent implements OnInit {
+ 
+  showModal = false;
 
   constructor(public dialog: MatDialog) { }
 
@@ -15,8 +17,6 @@ export class DificuldadesComponent implements OnInit {
   }
 
   openDialog(): void {
-    this.dialog.open(ModalDicasComponent, {
-      width: '450px'
-    });
+    this.showModal = !this.showModal;
   }
 }

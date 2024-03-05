@@ -7,7 +7,7 @@ import { PromocaoService } from 'src/app/domains/services/promocao/promocao.serv
   templateUrl: './modal-dicas.component.html',
   styleUrls: ['./modal-dicas.component.scss'],
 })
-export class ModalDicasComponent implements AfterViewInit {
+export class ModalDicasComponent implements OnInit {
   @ViewChild('divId', { static: true }) divElementRef: ElementRef;
   
   dicasForm = new FormGroup({
@@ -16,13 +16,18 @@ export class ModalDicasComponent implements AfterViewInit {
     whatsapp: new FormControl('', [Validators.required]),
   });
 
+  loading = true;
+
   constructor(
     private promocaoService: PromocaoService,
     private renderer: Renderer2
   ) {}
 
-  ngAfterViewInit() {
-   
+
+  ngOnInit(): void {
+    setTimeout(() => {
+      this.loading = false;
+    }, 2000);
   }
 
   enviarDicas() {
