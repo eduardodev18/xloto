@@ -43,7 +43,7 @@
           </li>
         </ul>
 
-        <button (click)="openDialog()">
+        <button [ngxScrollTo]="'#sessao2'">
           Gostaria de receber dicas de gestão de lotéricas?
         </button>
       </div>
@@ -56,97 +56,7 @@
     <h1 mat-dialog-title>Gostaria de receber dicas de gestão de lotéricas?</h1>
     <h2>Insira seus dados e receba as melhores dicas sobre gestão de lotéricas
         fornecidas por nossos especialistas.</h2>
-    <form
-      id="aDhY_hGltJyVuoj1oLyIW-form"
-      autocomplete
-      role="form"
-      method="post"
-      enctype="multipart/form-data"
-      class="sprinthub-form-wrapper cust-aDhY_hGltJyVuoj1oLyIW"
-    >
-      <div
-        id="1KkY8sLauI-wrapper"
-        class="sprinthub-form-fieldwrapper cust-1KkY8sLauI"
-      >
-        <label for="1KkY8sLauI" class="sprinthub-lp-text cust-owJuEc0Yga"
-          >Nome completo</label
-        ><input
-          id="1KkY8sLauI"
-          name="5Hx6v0nys3"
-          type="text"
-          class="form-control cust-5Hx6v0nys3"
-          required
-          placeholder="Nome completo"
-        />
-      </div>
-      <div
-        id="Hi58b_9CYu-wrapper"
-        class="sprinthub-form-fieldwrapper cust-Hi58b_9CYu"
-      >
-        <label for="Hi58b_9CYu" class="sprinthub-lp-text cust-5XKdMGtBuI"
-          >Email</label
-        ><input
-          id="Hi58b_9CYu"
-          name="oZCd5_f8Pj"
-          type="email"
-          class="form-control cust-oZCd5_f8Pj"
-          required
-          placeholder="example@domain.com"
-        />
-      </div>
-      <div
-        id="G33p2TqOZ_-wrapper"
-        class="sprinthub-form-fieldwrapper cust-G33p2TqOZ_"
-      >
-        <label for="G33p2TqOZ_" class="sprinthub-lp-text cust-Wwf_CxUcCT"
-          >WhatsApp/Telefone</label
-        ><input
-          id="G33p2TqOZ_"
-          name="F0l0VPZgQF"
-          type="shubphone"
-          class="form-control cust-F0l0VPZgQF"
-          required
-        />
-      </div>
-      <div
-        id="NqlEO6l5zh-wrapper"
-        class="sprinthub-form-fieldwrapper cust-NqlEO6l5zh"
-      >
-        <label for="NqlEO6l5zh" class="sprinthub-lp-text cust-zrYuo_5ENo"
-          >Descreva um pouco sobre a sua lotérica, quantidade de terminais e
-          filiais que tem.</label
-        ><textarea
-          id="NqlEO6l5zh"
-          name="6-onWanS4v"
-          type="text"
-          rows="3"
-          class="form-control cust-6-onWanS4v"
-          required
-        ></textarea>
-      </div>
-      <button
-        type="submit"
-        name="aDhY_hGltJyVuoj1oLyIW_submit"
-        id="aDhY_hGltJyVuoj1oLyIW_submit"
-        class="sprinthub-button btn btn-primary cust-AnhzYs53tu"
-      >
-        Enviar
-      </button>
-      <div
-        class="alert alert-danger cust-1xDSTklj_O"
-        role="alert"
-        data-shubferror="aDhY_hGltJyVuoj1oLyIW"
-      >
-        ERRO
-      </div>
-      <div
-        class="alert alert-success cust-Lsgqk2Fc2O"
-        role="alert"
-        data-shubfsuccess="aDhY_hGltJyVuoj1oLyIW"
-      >
-        Muito Obrigado!
-      </div>
-    </form>
+    
     <button (click)="openDialog()">Fechar</button>
   </div>
 </div>
