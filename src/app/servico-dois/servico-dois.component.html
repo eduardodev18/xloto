@@ -1,19 +1,18 @@
 <div class="header">
-    <div class="container">
-        <div class="row">
-            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-                <app-navbar></app-navbar>
-            </div>
-        </div>
-
-        <div class="row">
-            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-                <app-chamada id="sessao1"></app-chamada>
-            </div>
-        </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+        <app-navbar></app-navbar>
+      </div>
     </div>
-</div>
 
+    <div class="row">
+      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+        <app-chamada id="sessao1"></app-chamada>
+      </div>
+    </div>
+  </div>
+</div>
 
 <!-- DIFICULDADES -->
 <app-dificuldades></app-dificuldades>
@@ -38,9 +37,12 @@
 <!-- FOOTER -->
 <app-footer></app-footer>
 
-<a href="https://api.whatsapp.com/send?phone={{whatsappNumber}}" target="_blank" class="floating-whatsapp">
-    <img src="/assets/img/whats.svg" alt="" srcset="">
-  </a>
+<a
+  href="https://xloto.sprinthub.site/r/botao-whatsapp-site"
+  target="_blank"
+  class="floating-whatsapp"
+>
+  <img src="/assets/img/whats.svg" alt="" srcset="" />
+</a>
 
-
-  <app-loading *ngIf="loading"></app-loading>
+<app-loading *ngIf="loading"></app-loading>
